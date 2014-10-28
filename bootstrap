@@ -37,6 +37,8 @@ set -x
 
 sed -e s,@version@,${version},g configure.ac.in > configure.ac
 
+mkdir -p m4
+
 aclocal
 libtoolize --force --copy
 autoheader
